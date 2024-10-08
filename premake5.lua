@@ -1,6 +1,6 @@
 workspace "VLP"
     architecture "x64"
-    startproject "Test"
+    startproject "Example"
 
     configurations
     {
@@ -18,4 +18,4 @@ BinDir = "%{wks.location}/bin/%{OutDir}/%{prj.name}"
 IntDir = "%{wks.location}/bin-int/%{OutDir}/%{prj.name}"
 
 include "VLP"
-include "Test"
+include "Example"
