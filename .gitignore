@@ -3,6 +3,6 @@ bin/
 bin-int/
 
 *.sln
-*.user
-*.filters
 *.vcxproj
+*.filters
+*.user

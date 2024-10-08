@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef DEBUG
+#ifdef VLP_DEBUG
 	#include <cassert>
 	#define VLP_ASSERT assert
 #else
