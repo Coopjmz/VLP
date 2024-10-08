@@ -7,8 +7,8 @@ project "VLP"
     targetdir (BinDir)
     objdir (IntDir)
 
-	pchheader "vlppch.h"
-	pchsource "src/vlppch.cpp"
+    pchheader "vlppch.h"
+    pchsource "src/vlppch.cpp"
 
     files
     {
