@@ -5,7 +5,7 @@ project "Example"
     staticruntime "on"
 
     targetdir (BinDir)
-    objdir (IntDir)
+    objdir (ObjDir)
 
     files
     {

@@ -13,9 +13,10 @@ workspace "VLP"
         "MultiProcessorCompile"
     }
 
-OutDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-BinDir = "%{wks.location}/bin/%{OutDir}/%{prj.name}"
-IntDir = "%{wks.location}/bin-int/%{OutDir}/%{prj.name}"
+BuildDir = "%{wks.location}/build"
+OutDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/%{prj.name}"
+BinDir = "%{BuildDir}/bin/%{OutDir}"
+ObjDir = "%{BuildDir}/obj/%{OutDir}"
 
 include "VLP"
 include "Example"

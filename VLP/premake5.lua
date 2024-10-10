@@ -5,7 +5,7 @@ project "VLP"
     staticruntime "on"
 
     targetdir (BinDir)
-    objdir (IntDir)
+    objdir (ObjDir)
 
     pchheader "vlppch.h"
     pchsource "src/vlppch.cpp"
