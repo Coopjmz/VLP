@@ -23,14 +23,15 @@ project "VLP"
 
     filter "system:windows"
         systemversion "latest"
-        defines "VLP_PLATFORM_WINDOWS"
 
     filter "configurations:Debug"
         runtime "Debug"
         defines "VLP_DEBUG"
-        symbols "on"
+        optimize "Off"
+        symbols "On"
 
     filter "configurations:Release"
         runtime "Release"
         defines "VLP_RELEASE"
-        optimize "on"
+        optimize "On"
+        symbols "Off"

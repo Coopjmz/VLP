@@ -26,14 +26,15 @@ project "Example"
 
     filter "system:windows"
         systemversion "latest"
-        defines "PLATFORM_WINDOWS"
 
     filter "configurations:Debug"
         runtime "Debug"
         defines "DEBUG"
-        symbols "on"
+        optimize "Off"
+        symbols "On"
 
     filter "configurations:Release"
         runtime "Release"
         defines "RELEASE"
-        optimize "on"
+        optimize "On"
+        symbols "Off"
